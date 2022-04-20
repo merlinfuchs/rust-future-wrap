@@ -1,0 +1,15 @@
+[package]
+name = "future-wrap"
+version = "0.1.0"
+edition = "2021"
+authors = ["Merlin <hi@merlin.gg>"]
+description = "A minimal crate that lets you wrap a future to track each poll and modify the outcome."
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/merlinfuchs/rust-future-wrap"
+
+[dependencies]
+pin-project = "1.0.10"
+
+[dev-dependencies]
+tokio = { version = "1.17.0", features = ["time", "macros", "rt"] }
