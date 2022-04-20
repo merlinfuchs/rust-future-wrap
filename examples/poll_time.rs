@@ -33,7 +33,7 @@ fn main() {
             let poll_start = Instant::now();
 
             println!("Poll start");
-            let res = fut.poll(cx).map(|v| Some(v));
+            let res = fut.poll(cx);
             println!("Poll end");
 
             remaining_time = remaining_time.saturating_sub(poll_start.elapsed());
